@@ -6,9 +6,9 @@
 
 		<?php
 			if ($_SESSION['logged_in'] == 1) {
-			echo "<script type = "text/javascript"> var logged_in = true;</script>";
+			echo '<script type = "text/javascript"> var logged_in = true;</script>';
 			} else {
-			echo "<script type = "text/javascript"> var logged_in = false;</script>";
+			echo '<script type = "text/javascript"> var logged_in = false;</script>';
 			}
 		?>
 		
