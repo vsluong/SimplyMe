@@ -33,8 +33,7 @@
                 
                 // edit code to add information into database
                 
-                if(mail("r.saenz@sitedesigncreation.com", "Test email form contact form", "Name: ".$_POST["name"]." 
-                    Email: ".$_POST["email"]." password: ".$_POST["password"])){
+                if(//send to database){
                     
                 // end edit code, no need to edit past here
             
@@ -58,6 +57,14 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initialscale=1" />
     
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -65,22 +72,25 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <style>
+    body{
+      background-image:url("login-back.png");
+      background-size:cover;    
+      height:100%;
+      width:100%;
+    }
     .emailForm{
         border:1px solid grey;
         border-radius:10px;
-        margin-top:20px;
-        padding-bottom:30px;
-    
-    }
-    
-    textarea{
-        height:100px;
+        margin-top:50px;
+        padding-bottom:70px;
+        background-color:white;
+        opacity:.9;
     
     }
 </style>
 </head>
 <body>
-    <div>        
+    <div id="content">        
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 emailForm">
@@ -117,6 +127,16 @@
         
         </div>
     </div>
+    
+    <script>
+
+        $("body").css("min-height", $(window).height());
+
+
+    </script>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
