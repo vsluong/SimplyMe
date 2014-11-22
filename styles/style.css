@@ -80,6 +80,12 @@ a{color:#4BB5B0;text-decoration:none}
             float:right;
             margin-right:80px;
         }
+        
+        .fb-comments{
+        	position: absolute;
+        	margin-top: 500px;
+        	margin-left: 180px;
+        }
 
         @media all and (max-width: 620px) {
             header {
