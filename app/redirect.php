@@ -17,7 +17,7 @@
 			if (logged_in) {
 				window.location.href = "app.html";
 			} else {
-				window.location.href = "login.html";
+				window.location.href = "login.php";
 			}
 		</script>
 	</body>
