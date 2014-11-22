@@ -1,4 +1,8 @@
 /*#50b296*/
+
+/*Universal*/
+a{color:#4BB5B0;text-decoration:none}
+/* Style Design*/
         body {
             background: #50b296;
             font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -34,6 +38,46 @@
 
         .LogoContainer img {
             max-width: 200px;
+        }
+
+        .circles{
+            width:200px;
+            height:200px;
+            border-radius:100px;
+            background-color:white;
+            margin-left:140px;
+            margin-top:200px;
+            color: #4F4F4F;
+            float:left;
+            position:relative;
+        }
+        .circles p{
+            margin:0 auto;
+            padding:45px;
+
+        }
+
+        .arrow{
+            font-size:2.4em;
+            padding:0;
+            margin:0;
+            position:absolute;
+            margin-left:400px;
+            margin-top:120px;
+        }
+
+        #arrowRight{
+            padding:0;
+            margin:0;
+            margin-left:750px;
+            margin-top:120px;
+            -webkit-transform: rotateX('190'); /* Chrome, Safari, Opera */
+            transform: rotateX(190deg);
+        }
+
+        #rightCircle{
+            float:right;
+            margin-right:80px;
         }
 
         @media all and (max-width: 620px) {
