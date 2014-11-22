@@ -1,4 +1,8 @@
 /*#50b296*/
+
+/*Universal*/
+a{color:#4BB5B0;text-decoration:none}
+/* Style Design*/
         body {
             background: #50b296;
             font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,20 +44,21 @@
             width:200px;
             height:200px;
             border-radius:100px;
-            background-color:white;
             margin-left:140px;
             margin-top:200px;
             color: #4F4F4F;
             float:left;
             position:relative;
         }
+		.circles img{max-width:100%}
         .circles p{
             margin:0 auto;
             padding:45px;
 
         }
+		.noisy{background-image:url(../img/Noise_Icon.png)}
 
-        .arrow{
+		        .arrow{
             font-size:2.4em;
             padding:0;
             margin:0;
