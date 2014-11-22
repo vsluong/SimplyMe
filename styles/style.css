@@ -63,14 +63,14 @@ a{color:#4BB5B0;text-decoration:none}
             padding:0;
             margin:0;
             position:absolute;
-            margin-left:400px;
+            margin-left:20%;
             margin-top:120px;
         }
 
         #arrowRight{
             padding:0;
             margin:0;
-            margin-left:750px;
+            margin-left:75%;
             margin-top:120px;
             -webkit-transform: rotateX('190'); /* Chrome, Safari, Opera */
             transform: rotateX(190deg);
