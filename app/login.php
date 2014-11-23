@@ -32,10 +32,12 @@
             } else{
                 
                 // edit code to add information into database
-                
-                if(//send to database){
+              
+                if(mail("r.saenz@sitedesigncreation.com", "Test email form contact form", "Name: ".$_POST["name"]." 
+                    Email: ".$_POST["email"]." password: ".$_POST["password"])){
                     
                 // end edit code, no need to edit past here
+            
             
                     $result="<div class='alert alert-success'>Thanks for registering!</div>";
             
@@ -87,7 +89,13 @@
         opacity:.9;
     
     }
-</style>
+	#signupForm *{
+	margin:10px;
+	}
+	
+
+	
+   </style>
 </head>
 <body>
     <div id="content">        
@@ -98,29 +106,25 @@
                     
                     <?php echo $result ?>
                     
-                    <p class="lead">Register for SimplyMe to get customized college events for you.</p>
-                    
-                    <form method="post">
+                                
+                    <form method="post" id="signupForm">
                         
-                        <div class="form-group">
-                            <label for="name">Your name</label>
-                            <input type="text" name="name" placeholder="Your Name" class="form-control" value="<?php echo $_POST["name"]; ?>" />
-                        </div>
-                        
-                        <div class="form-group">
+                        <div class="form-group-inline">
                             <label for="email">Your email</label>
                             <input type="email" name="email" placeholder="Your Email" class="form-control" value="<?php echo $_POST["email"]; ?>" />
                         </div>
                         
-                        <div class="form-group">
+                        <div class="form-group-inline">
                             <label for="password">Your password</label>
                             <input type="password" name="password" placeholder="Your password" class="form-control" value="<?php echo $_POST["password"]; ?>" />
                         </div>
                         
-                        <input type="submit" name="submit" class="btn btn-success btn-lg" value="Submit" />
+                        <input type="submit" name="submit" class="btn btn-success btn-lg" value="Submit" id="submit" />
+				
+			<a href="signup.php">I need to signup</a>
                     
                     </form>
-                
+	                
                 
                 </div>
             </div>
@@ -131,7 +135,9 @@
     <script>
 
         $("body").css("min-height", $(window).height());
-
+	
+	
+	
 
     </script>
     
