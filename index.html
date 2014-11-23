@@ -1,22 +1,12 @@
 ﻿<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simply Me</title>
-
-
  </head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 <title>Simply Me</title>
 <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<section>
-</section>
     <header>
         <div class="TopNav">
             Home
@@ -30,20 +20,36 @@
             </div>
         </div>
     </header>
-    <section></section>
     <section>
-        <div class="circles">
-            <img src="img/Noise_Icon.png" class="NoiseIcon">
-        </div>
+		<!--Code for FB comments-->
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js,
+					    fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=883350858343889&version=v2.0";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!--End of code to add FB comments-->
 
-        <div id="arrowLeft" class="arrow">&#10138;</div>
+			<div class="circles">
+				<img src="img/Noise_Icon.png" class="NoiseIcon">
+			</div>
 
-        <div id="arrowRight" class="arrow">&#10138;</div>
+			<div class="circles" id="rightCircle">
+				<p>
+					filtered
+				</p>
+			</div>
 
-        <div class="circles" id="rightCircle">
-            <p>filtered</p>
-        </div>
-
-    </section>
-</body>
+		</section>
+		<div>
+			<div class="fb-comments" data-href="https://www.facebook.com/SimplyMeApp" data-width="600" data-numposts="5" data-colorscheme="light"></div>
+		</div>
+	</body>
 </html>
